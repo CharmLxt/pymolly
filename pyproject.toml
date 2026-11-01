@@ -1,0 +1,25 @@
+[build-system]
+requires = ["setuptools>=68", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "pymolly"
+version = "10.4.0"
+description = "Молли — дружелюбный баг-репортер для Python. Ловит ошибки и объясняет их простым языком."
+readme = "README.md"
+requires-python = ">=3.8"
+license = { text = "MIT" }
+authors = [{ name = "CharmLxt", email = "reception.mailspypi@gmail.com" }]
+keywords = ["error", "exception", "debug", "traceback", "friendly", "molly", "charmpkk"]
+dependencies = []
+
+[project.urls]
+Homepage = "https://github.com/CharmLxt/pymolly"
+Source = "https://github.com/CharmLxt/pymolly"
+Tracker = "https://github.com/CharmLxt/pymolly/issues"
+
+[project.optional-dependencies]
+charm = ["CharmPkk>=31.10.26b1"]
+
+[tool.setuptools.packages.find]
+include = ["pymolly*"]
